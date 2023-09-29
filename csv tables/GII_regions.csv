@@ -1,0 +1,7 @@
+id,region,Gender Inequality Index,"Maternal Mortality Ratio (deaths per 100,000 live births)","Adolescent Birth Rate (births per 1,000 women ages 15-19)","Population with at least some secondary education, female (% ages 25 and older)","Population with at least some secondary education, male (% ages 25 and older)","Share of seats in parliament, female (% held by women)","Share of seats in parliament, male (% held by men)","Labour force participation rate, female (% ages 15 and older)","Labour force participation rate, male (% ages 15 and older"
+ZZF.EAP,East Asia and the Pacific,0.337,81.93302878,21.58068237,71.43200548,78.21712342,20.9302702,79.0697298,59.70419824,75.20912609
+ZZG.ECA,Europe and Central Asia,0.227,20.27576562,20.13162299,83.35239467,89.7488391,26.07003891,73.92996109,42.92637716,67.03875232
+ZZH.LAC,Latin America and the Caribbean,0.381,75.03083761,53.38933304,63.16086322,63.1713811,33.20063694,66.79936306,48.63018103,72.65657079
+ZZI.SA,South Asia,0.508,153.2683128,28.93707549,42.18837763,52.81724071,17.57785467,82.42214533,21.59412837,71.58559894
+ZZJ.SSA,Sub-Saharan Africa,0.569,535.6588135,100.8778766,31.14724917,44.26957348,25.71575167,74.28424833,62.14442812,72.25366195
+ZZK.WORLD,World,0.465,225.4065029,42.52906594,64.15425842,70.31651579,25.91337244,74.08662756,46.20044669,71.69173974

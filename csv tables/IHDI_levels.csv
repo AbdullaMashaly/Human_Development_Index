@@ -1,0 +1,5 @@
+id,HDI level,Coefficient of Human Inequality,Overall loss (%),Inequality in life expectancy,Inequality in eduation,Inequality in income
+ZZA.VHHD,Very high human development,9.929675818,10.15625,4.675608723,6.314298214,18.79912052
+ZZB.HHD,High human development,16.47441051,16.84350133,8.012336932,13.86198367,27.54891094
+ZZC.MHD,Medium human development,23.95152391,24.37106918,17.27439831,33.61186022,20.96831319
+ZZD.LHD,Low human development,30.2961697,30.69498069,28.91810329,38.87811736,23.09228844

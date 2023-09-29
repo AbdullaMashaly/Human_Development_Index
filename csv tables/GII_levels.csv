@@ -1,0 +1,5 @@
+id,HDI level,Gender Inequality Index,"Maternal Mortality Ratio (deaths per 100,000 live births)","Adolescent Birth Rate (births per 1,000 women ages 15-19)","Population with at least some secondary education, female (% ages 25 and older)","Population with at least some secondary education, male (% ages 25 and older)","Share of seats in parliament, female (% held by women)","Share of seats in parliament, male (% held by men)","Labour force participation rate, female (% ages 15 and older)","Labour force participation rate, male (% ages 15 and older"
+ZZA.VHHD,Very high human development,0.155,14.97853185,14.09208185,86.97344955,89.41055967,29.13450292,70.86549708,52.56831041,68.412961
+ZZB.HHD,High human development,0.329,62.10730446,28.04192388,72.67504104,78.02377915,25.75284772,74.24715228,53.63918217,73.47596252
+ZZC.MHD,Medium human development,0.494,175.3470942,38.12841017,43.95910711,54.18083056,21.78904711,78.21095289,28.80900951,71.30478678
+ZZD.LHD,Low human development,0.577,499.4570447,89.51971356,22.79077998,34.12232595,24.34782609,75.65217391,49.26579234,73.20895635
