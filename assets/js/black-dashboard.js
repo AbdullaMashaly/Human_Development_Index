@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   var scroll_start = 0;
   var startchange = $('.row');
-  var offset = startchange.offset();
+  var offset = startchange.length ? startchange.offset() : null;
   var scrollElement = navigator.platform.indexOf('Win') > -1 ? $(".ps") : $(window);
   scrollElement.scroll(function() {
 
@@ -93,14 +93,16 @@ $(document).ready(function() {
   });
 
 
-  $(document).scroll(function() {
-    scroll_start = $(this).scrollTop();
-    if (scroll_start > offset.top) {
-      $(".navbar-minimize-fixed").css('opacity', '1');
-    } else {
-      $(".navbar-minimize-fixed").css('opacity', '0');
-    }
-  });
+  if (offset) {
+    $(document).scroll(function() {
+        var scroll_start = $(this).scrollTop();
+        if (scroll_start > offset.top) {
+            $(".navbar-minimize-fixed").css('opacity', '1');
+        } else {
+            $(".navbar-minimize-fixed").css('opacity', '0');
+        }
+    });
+  }
 
   if ($('.full-screen-map').length == 0 && $('.bd-docs').length == 0) {
     // On click navbar-collapse the menu will be white not transparent
