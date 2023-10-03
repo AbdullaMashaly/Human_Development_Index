@@ -67,6 +67,8 @@ html {
   -webkit-tap-highlight-color: rgba(34, 42, 66, 0);
 }
 
+
+
 article,
 aside,
 figcaption,
@@ -3686,6 +3688,8 @@ input[type="button"].btn-block {
   background-clip: padding-box;
   border: 0 solid rgba(34, 42, 66, 0.15);
   border-radius: 0.1428rem;
+  overflow-y: auto;
+  max-height: 300px;
   box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -16507,8 +16511,7 @@ a:focus {
 
 h1,
 .h1 {
-  line-height: 1.05;
-  margin-bottom: 30px;
+  margin: 10px;
 }
 
 h1 small,
@@ -17805,7 +17808,7 @@ table.tablesorter thead tr .headerSortDown {
   float: right;
   width: 100%;
   min-height: 100vh;
-  border-top: 2px solid #e14eca;
+  border-top: 2px solid var(--danger);
   background: linear-gradient(#1e1e2f, #1e1e24);
   -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
@@ -17827,7 +17830,7 @@ table.tablesorter thead tr .headerSortDown {
 }
 
 .main-panel>.content {
-  padding: 78px 30px 30px 280px;
+  padding: 78px 15px 30px 15px;
   min-height: calc(100vh - 70px);
 }
 

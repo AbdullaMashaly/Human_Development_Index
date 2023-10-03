@@ -8,6 +8,14 @@ d3.json("http://127.0.0.1:9500/").then(apiData => {
     let dataIHDI = allData.ihdi.filter(function(country) {return country.id === "USA"})
     let dataGII = allData.gii.filter(function(country) {return country.id === "USA"})
 
+    // Append Countries to the dropdown list
+    let countriesArray = allData.hdi.map(country => country.country);
+    console.log(countriesArray);
+    countriesArray.map(function (name) {
+    let option = d3.select("#selDataset").append("a").attr("class", "dropdown-item");
+    option.text(`${name}`);
+    });
+
     let USAHDI = dataHDI[0]
     let USAIHDI = dataIHDI[0]
     let USAGII = dataGII[0]
@@ -54,3 +62,4 @@ d3.json("http://127.0.0.1:9500/").then(apiData => {
 
 
 });
+
