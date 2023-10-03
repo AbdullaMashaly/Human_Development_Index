@@ -5,8 +5,10 @@ d3.json("http://127.0.0.1:9500/").then(apiData => {
     console.log("Data", allData);
 
     let dataHDI = allData.hdi.filter(function(country) {return country.id === "USA"})
-    let dataIHDI = allData.ihdi.filter(function(country) {return country.id === "USA"})
-    let dataGII = allData.gii.filter(function(country) {return country.id === "USA"})
+    let dataIHDI = allData.ihdi.filter(function(country) {return country.iso3 === "USA"})
+    // let dataGII = allData.gii.filter(function(country) {return country.id === "USA"})
+    console.log(dataHDI)
+    console.log(dataIHDI)
 
     // Append Countries to the dropdown list
     let countriesArray = allData.hdi.map(country => country.country);
@@ -18,7 +20,8 @@ d3.json("http://127.0.0.1:9500/").then(apiData => {
 
     let USAHDI = dataHDI[0]
     let USAIHDI = dataIHDI[0]
-    let USAGII = dataGII[0]
+    console.log(USAIHDI)
+    // let USAGII = dataGII[0]
     
     const hdiText = document.getElementById('hdi');
     hdiText.innerHTML = USAHDI.hdi_2021;
@@ -42,12 +45,12 @@ d3.json("http://127.0.0.1:9500/").then(apiData => {
                 fill: false
                 },
                 {
-                    label: 'IHDI Trends',
-                    data: [USAIHDI.ihdi_2011, USAIHDI.ihdi_2012, USAIHDI.ihdi_2013, USAIHDI.ihdi_2014, USAIHDI.ihdi_2015, USAIHDI.ihdi_2016, USAIHDI.ihdi_2017, USAIHDI.ihdi_2018, USAIHDI.ihdi_2019, USAIHDI.ihdi_2020, USAIHDI.ihdi_2021],
-                    borderColor: 'teal',
-                    borderWidth: 1,
-                    backgroundColor: 'teal',
-                    fill: false
+                label: 'IHDI Trends',
+                data: [USAIHDI.ihdi_2011, USAIHDI.ihdi_2012, USAIHDI.ihdi_2013, USAIHDI.ihdi_2014, USAIHDI.ihdi_2015, USAIHDI.ihdi_2016, USAIHDI.ihdi_2017, USAIHDI.ihdi_2018, USAIHDI.ihdi_2019, USAIHDI.ihdi_2020, USAIHDI.ihdi_2021],
+                borderColor: 'teal',
+                borderWidth: 1,
+                backgroundColor: 'teal',
+                fill: false
                 }
             ]},
         options: {
