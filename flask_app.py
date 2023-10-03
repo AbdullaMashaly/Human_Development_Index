@@ -31,6 +31,9 @@ Run these commands in terminal/bash to import the csv files to our database:
     mongoimport --type csv -d HDI -c gii_countries --headerline --drop GII_countries.csv
     mongoimport --type csv -d HDI -c gii_regions --headerline --drop GII_regions.csv
     mongoimport --type csv -d HDI -c gii_levels --headerline --drop GII_levels.csv
+    mongoimport --type csv -d HDI -c ihdi_index_countries --headerline --drop IHDI_index_countries.csv
+    mongoimport --type csv -d HDI -c ihdi_index_regions --headerline --drop IHDI_regions_index.csv
+    mongoimport --type csv -d HDI -c ihdi_index_levels --headerline --drop IHDI_levels_index.csv
     
 
 '''
@@ -41,8 +44,8 @@ Run these commands in terminal/bash to import the csv files to our database:
 mongo = MongoClient(port=27017)
 db = mongo['HDI']
 hdi_countries = db['hdi_countries']
-ihdi_countries = db['ihdi_countries']
-gii_countries = db['gii_countries']
+ihdi_countries = db['ihdi_index_countries']
+# gii_countries = db['gii_countries']
 #################################################
 # Flask Setup
 #################################################
@@ -58,7 +61,7 @@ def names():
     # query = {'HDI Code' : 'Very High'}
     results_hdi =  hdi_countries.find()
     results_ihdi = ihdi_countries.find()
-    results_gii = gii_countries.find()
+    # results_gii = gii_countries.find()
     # Convert MongoDB results to a format that's easily serializable
     hdi_outputs = {}
     output = []
@@ -80,12 +83,12 @@ def names():
     hdi_outputs['ihdi'] = output
 
     output = []
-    for result in results_gii: #, :
-        # Convert ObjectId to string
-        result['_id'] = str(result['_id'])  
-        output.append(result)
+    # for result in results_gii: #, :
+    #     # Convert ObjectId to string
+    #     result['_id'] = str(result['_id'])  
+    #     output.append(result)
         
-    hdi_outputs['gii'] = output
+    # hdi_outputs['gii'] = output
 
     return hdi_outputs
 
