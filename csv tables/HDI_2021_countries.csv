@@ -1,4 +1,4 @@
-id,country,region,HDI Code,HDI Rank,Human Development Index 2021,Life Expectancy at Birth,Expected Years of Schooling,Mean Years of Schooling,Gross National Income Per Capita
+iso3,country,region,HDI_Code,HDI_Rank,Human Development Index 2021,Life Expectancy at Birth,Expected Years of Schooling,Mean Years of Schooling,Gross National Income Per Capita
 AFG,Afghanistan,SA,Low,180.0,0.478,61.9824,10.26384398,2.98506999,1824.190915
 AGO,Angola,SSA,Medium,148.0,0.586,61.6434,12.1721,5.417390823,5465.617791
 ALB,Albania,ECA,High,67.0,0.796,76.4626,14.44799995,11.28645502,14131.11039

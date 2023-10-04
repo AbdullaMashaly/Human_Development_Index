@@ -1,4 +1,4 @@
-id,region,hdi_2011,hdi_2012,hdi_2013,hdi_2014,hdi_2015,hdi_2016,hdi_2017,hdi_2018,hdi_2019,hdi_2020,hdi_2021
+iso3,region,hdi_2011,hdi_2012,hdi_2013,hdi_2014,hdi_2015,hdi_2016,hdi_2017,hdi_2018,hdi_2019,hdi_2020,hdi_2021
 ZZF.EAP,East Asia and the Pacific,0.692,0.7,0.707,0.715,0.722,0.728,0.734,0.741,0.748,0.748,0.749
 ZZG.ECA,Europe and Central Asia,0.754,0.76,0.772,0.778,0.783,0.788,0.794,0.798,0.802,0.793,0.796
 ZZH.LAC,Latin America and the Caribbean,0.74,0.744,0.753,0.756,0.758,0.761,0.763,0.766,0.768,0.755,0.754
