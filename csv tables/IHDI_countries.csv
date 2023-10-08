@@ -1,4 +1,4 @@
-iso3,country,HDI_Code,ihdi_2021,Coefficient of Human Inequality,Overall loss (%),Inequality in life expectancy,Inequality in eduation,Inequality in income
+iso3,country,HDI_Code,ihdi_2021,Coefficient_of_Human Inequality,Overall loss (%),Inequality_in_life_expectancy(%),Inequality_in_eduation(%),Inequality_in_income(%)
 AFG,Afghanistan,Low,,,,26.16536713,45.36517,
 AGO,Angola,Medium,0.407,30.41216757,30.54607509,28.1877327,34.17144,28.87733
 ALB,Albania,High,0.71,10.76768488,10.8040201,6.790634632,12.33344,13.17898
