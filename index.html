@@ -128,12 +128,15 @@
                                 <div class="col-md-8 bg-white">
                                     <canvas id="myChart"></canvas>
                                 </div>
-                                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                                <div class="col-6 col-md-4">
+                                    
+                                </div>
                             </div>
                             <!-- Columns are always 50% wide, on mobile and desktop -->
-                            <div class="row">
-                                <!-- <div class="col-6" id="radar"></div> -->
-                                <canvas id="chartId" ></canvas>
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col-md-8">
+                                    <canvas id="radarChart"></canvas>
+                                </div>   
                                 <div class="col-6">.col-6</div>
                             </div>
                         </div>
@@ -141,7 +144,10 @@
                             MAP
                         </div>
                         <div class="container text-center allcontent" id="regionDiv">
-                            Regions
+                            <div class = "col">
+                                <div id="regionChart"></div>
+                                <div id="regionBar" style="margin-top: 10px; margin-bottom: 10px;"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -179,7 +185,8 @@
         <script src="https://cdnjs.com/libraries/Chart.js"></script>
         <!-- Main Script -->
         <script src="script.js"></script>
-        <script src="radar_chart.js"></script>
+        <!-- Plotly -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
     </body>
 </html>
