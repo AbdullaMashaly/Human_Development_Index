@@ -6,6 +6,7 @@ UNC Chapel Hill - Data Analytics Boot Camp Project 3
 ## Table of Contents
 
 - [About](#about)
+- [Analysis](#analysis)
 - [Contributing](#contributing)
 
 ## About
@@ -15,6 +16,15 @@ The Human Development Index, for example, is a standardized metric used to measu
 
 The objective is to use the data to create a web based visual for users to investigate the metrics for individual countries or regions in a comprehensive, easy to follow way. We also performed our own analysis on the data to draw conclusions around the information provided to us from this report. The analysis performed helps to validate the accuracy of the calculations used for these metrics.
 
+
+
+## Analysis
+
+Is there a relationship between components of the HDI index?
+
+Looking into the HDI components around education and life expectancy we can see a clear relationship between the expected number years of school vs the mean number years of school in each country. We can see from the graph that the countries with more years of schooling are also the countries with the higher life expectancy at the time of birth. This visual acts as quanitative data to support HDI index calculations, suggesting that the more developed countries (the countries with a higher hdi index) are also the countries that are expected to be more educated and live the longest lives.
+
+When comparing the life expectancy in each of the different levels of developing countries to the gross national income made per capita, we can see a wider spread in both categories of the developed countries (in green) then we do in any of the other levels. This graph can give us a clear picture of the diversity in the highly developed countries compared to the lack of diversity in the least developed countries. We can conclude that in the countries with highest income levels, we recognize the longest life expectancy. We also see that in the countries with a higher life expectancy, there is an exponential growth in the GNI per capita that people earn within that country.
 
 
 
