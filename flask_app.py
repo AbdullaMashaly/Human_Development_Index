@@ -49,6 +49,10 @@ db = mongo['HDI']
 hdi_countries = db['hdi_countries']
 ihdi_countries = db['ihdi_index_countries']
 hdi_2021_countries= db['HDI_2021_countries']
+hdi_2021_regions = db['HDI_2021_regions']
+ihdi_2021_regions = db['ihdi_regions']
+hdi_trends_regions = db['hdi_regions']
+ihdi_trends_regions = db['ihdi_index_regions']
 # gii_countries = db['gii_countries']
 #################################################
 # Flask Setup
@@ -61,16 +65,19 @@ CORS(app)
 #################################################
 
 @app.route("/")
-def names():
-    # query = {'HDI Code' : 'Very High'}
+def hdi():
+
+    # Quert The Database for Results
     results_hdi =  hdi_countries.find()
     results_ihdi = ihdi_countries.find()
     results_hdi_2021 = hdi_2021_countries.find()
     # results_gii = gii_countries.find()
+
     # Convert MongoDB results to a format that's easily serializable
+    # Create an empty dictionary to hold the results
     hdi_outputs = {}
     output = []
-    for result in results_hdi: #results_ihdi, results_gii:
+    for result in results_hdi:
         
         # Convert ObjectId to string
         result['_id'] = str(result['_id'])  
@@ -79,7 +86,7 @@ def names():
     hdi_outputs['hdi'] = output
 
     output = []
-    for result in results_ihdi: #, results_gii:
+    for result in results_ihdi:
         
         # Convert ObjectId to string
         result['_id'] = str(result['_id'])  
@@ -90,7 +97,7 @@ def names():
     output = []
 
     #results for HDI_2021_countries
-    for result in results_hdi_2021: #results_hdi_2021
+    for result in results_hdi_2021:
         
         # Convert ObjectId to string
         result['_id'] = str(result['_id'])  
@@ -108,6 +115,69 @@ def names():
     # hdi_outputs['gii'] = output
 
     return hdi_outputs
+
+@app.route("/regions")
+def hdi_regions():
+
+    # Quert The Database for Results
+    results_hdi_2021 = hdi_2021_regions.find()
+    results_ihdi_2021 = ihdi_2021_regions.find()
+    results_hdi_trends = hdi_trends_regions.find()
+    results_ihdi_trends = ihdi_trends_regions.find()
+
+    # Convert MongoDB results to a format that's easily serializable
+    # Create an empty dictionary to hold the results
+    hdi_regions_outputs = {}
+    output = []
+
+    #results for HDI_2021_regions
+    for result in results_hdi_2021:
+        
+        # Convert ObjectId to string
+        result['_id'] = str(result['_id'])  
+        output.append(result)
+
+    hdi_regions_outputs['hdi_regions_2021'] = output
+
+    output = []
+
+    #results for IHDI_2021_regions
+    for result in results_ihdi_2021:
+        
+        # Convert ObjectId to string
+        result['_id'] = str(result['_id'])  
+        output.append(result)
+
+    hdi_regions_outputs['ihdi_regions_2021'] = output
+
+    output = []
+
+    #results for HDI_trends_regions
+    for result in results_hdi_trends:
+        
+        # Convert ObjectId to string
+        result['_id'] = str(result['_id'])  
+        output.append(result)
+
+    hdi_regions_outputs['hdi_trends_regions'] = output
+
+    output = []
+
+    #results for IHDI_trends_regions
+    for result in results_ihdi_trends:
+        
+        # Convert ObjectId to string
+        result['_id'] = str(result['_id'])  
+        output.append(result)
+
+    hdi_regions_outputs['ihdi_trends_regions'] = output
+
+    return hdi_regions_outputs
+
+
+
+
+
 
 
 if __name__ == '__main__':
