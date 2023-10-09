@@ -86,7 +86,9 @@ function dashboard(countryName){
     lineChart(countryHDITrend[0], countryIHDItrend[0]);
     // Fill the cards with the selected country's data
     fillCards(countryHDI2021[0]);
-
+    
+    //Fill the radar chart
+    radar_chart(countryHDI2021[0]);
 };
 
 
@@ -161,6 +163,85 @@ document.getElementById("dropdownMenuButton").addEventListener("keydown", functi
     document.getElementById("dropdownMenuButton").focus();
 });
 
+
+function radar_chart(country) {
+
+//Grab data for the chart
+var chrt= document.getElementById("chartId");
+
+
+//Create chart to hold data
+
+var hdiComponents= new Chart(chrt, {
+  type: 'radar',
+  data: {
+    labels: ['Life Expectancy at Birth',
+      'Expected Years of Schooling',
+      'Mean Years of Schooling',
+      'Gross National Income Per Capita'
+    ],
+    datasets: [{
+    label: 'Country HDI Components',
+    data: [country["Life Expectancy at Birth"],country["Expected Years of Schooling"],
+    country["Mean Years of Schooling"],country["Gross National Income Per Capita"]/1000],
+    fill: true,
+    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+    borderColor: 'rgb(255, 99, 132)',
+    pointBackgroundColor: 'rgb(255, 99, 132)',
+    pointBorderColor: '#fff',
+    pointHoverBackgroundColor: '#fff',
+    pointHoverBorderColor: 'rgb(255, 99, 132)',
+    pointRadius: 6,
+    radius: 6
+    }],
+    //Dataset for the world averages
+    // datasets: [{
+    //   label: 'World Average HDI Components',
+    //   data: [world_hdi[0]["Life Expectancy at Birth"],world_hdi[0]["Expected Years of Schooling"],
+    //   world_hdi[0]["Mean Years of Schooling"],world_hdi[0]["Gross National Income Per Capita"]/1000],
+    //   fill: true,
+    //   backgroundColor: 'rgb(0, 0, 255, 0.2)',
+    //   borderColor: 'rgb(0, 0, 255)',
+    //   pointBackgroundColor: 'rgb(0,0,255)',
+    //   pointBorderColor: '#fff',
+    //   pointHoverBackgroundColor: '#fff',
+    //   pointHoverBorderColor: 'rgb(0, 0, 255)',
+    //   pointRadius: 6,
+    //   radius: 6
+    //   }],
+
+  },
+  options:
+  {
+    scale: {
+      gridLines: {
+        color: "white",
+        lineWidth: 3
+      },
+      angleLines: {
+        display: false
+      },
+      ticks: {
+        beginAtZero: true,
+        min: 0,
+        max: 100,
+        stepSize: 10
+      },
+      pointLabels: {
+        fontSize: 8,
+        fontColor: "red"
+      }
+    },
+    legend: {
+      position: 'left'
+    }
+  }
+});
+
+
+
+
+};
 
 
 
