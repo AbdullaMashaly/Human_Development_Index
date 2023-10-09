@@ -60,6 +60,10 @@
   box-sizing: border-box;
 }
 
+.allcontent {
+  display: none;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -102,6 +106,7 @@ hr {
   height: 0;
   overflow: visible;
 }
+
 
 h1,
 h2,
@@ -20445,4 +20450,5 @@ Copyright (c) 2015 Daniel Eden
   padding-right: 0;
 }
 
-/*# sourceMappingURL=dashboard-free.css.map */
+
+/*# sourceMappingURL=black-dashboard.css.map */

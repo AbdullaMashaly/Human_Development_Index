@@ -1,5 +1,5 @@
-iso3,HDI_level,ihdi_2021,Coefficient of Human Inequality,Overall loss (%),Inequality in life expectancy,Inequality in eduation,Inequality in income
-ZZA.VHHD,Very high human development,0.805,9.929675818,10.15625,4.675608723,6.314298214,18.79912052
-ZZB.HHD,High human development,0.627,16.47441051,16.84350133,8.012336932,13.86198367,27.54891094
-ZZC.MHD,Medium human development,0.481,23.95152391,24.37106918,17.27439831,33.61186022,20.96831319
-ZZD.LHD,Low human development,0.359,30.2961697,30.69498069,28.91810329,38.87811736,23.09228844
+iso3,HDI_level,ihdi_2011,ihdi_2012,ihdi_2013,ihdi_2014,ihdi_2015,ihdi_2016,ihdi_2017,ihdi_2018,ihdi_2019,ihdi_2020,ihdi_2021
+ZZA.VHHD,Very high human development,0.776,0.78,0.786,0.787,0.791,0.795,0.798,0.802,0.807,0.804,0.805
+ZZB.HHD,High human development,0.58,0.591,0.593,0.599,0.605,0.611,0.616,0.622,0.627,0.626,0.627
+ZZC.MHD,Medium human development,0.427,0.435,0.441,0.452,0.466,0.473,0.477,0.482,0.486,0.485,0.481
+ZZD.LHD,Low human development,0.327,0.331,0.336,0.341,0.344,0.349,0.352,0.355,0.359,0.359,0.359

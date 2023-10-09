@@ -1,4 +1,5 @@
-iso3,region,ihdi_2021,Coefficient of Human Inequality,Overall loss (%),Inequality in life expectancy,Inequality in eduation,Inequality in income
+iso3,region,ihdi_2021,Coefficient_of_Human Inequality,Overall loss (%),Inequality_in_life_expectancy(%),Inequality_in_eduation(%),Inequality_in_income(%)
+ZZE.AS,Arab States,0.534,24.18860098,24.57627119,14.11435723,33.13022385,25.32122186
 ZZF.EAP,East Asia and the Pacific,0.63,15.53736036,15.88785047,7.880201178,13.36198691,25.36989299
 ZZG.ECA,Europe and Central Asia,0.714,10.27755918,10.30150754,7.317008892,6.966866368,16.54880229
 ZZH.LAC,Latin America and the Caribbean,0.601,19.60879911,20.29177719,10.0932227,14.8026013,33.93057334
