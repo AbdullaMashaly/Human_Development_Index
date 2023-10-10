@@ -4,7 +4,7 @@ UNC Chapel Hill - Data Analytics Boot Camp Project 3
 ## Team Members:
 - Sophia Porretta
 - Akhil Karandikar
-- Nathaniel Hermann
+- Nathanial Hermann
 - Abdulla Mashaly
 
 ## Table of Contents
@@ -50,6 +50,16 @@ Looking into the HDI components around education and life expectancy we can see 
 When comparing the life expectancy in each of the different levels of developing countries to the gross national income made per capita, we can see a wider spread in both categories of the developed countries (in green) then we do in any of the other levels. This graph can give us a clear picture of the diversity in the highly developed countries compared to the lack of diversity in the least developed countries. We can conclude that in the countries with highest income levels, we recognize the longest life expectancy. We also see that in the countries with a higher life expectancy, there is an exponential growth in the GNI per capita that people earn within that country.
 
 ![Life Expectancy vs GNI](Resources/images/Life_Expectancy_vs_GNI.png)
+
+Is there any correlation between gender inequality index and other factors, including: maternal mortality ratio, adolescent birth rate, etc.
+
+This grouped bar chart shows the comparison of male vs female labor force percentages and number of filled seats in parliament for both males and females in different regions of the world and then for the world overall. In addition, the secondary axis shows the GII for the different regions. It is clear that males fill the majority of the seats in parliament and make up the majority of the labor force throughout the world. It appears that Latin America and the Caribbean region have the highest number of women with seats in parliament. Also it is interesting to note that the Sub-Saharan Africa region has highest GII, but there are still a large percentage of women in the labor force, though the data does not specify what types of labor are most common. 
+
+![GII vs labor vs parliament](Resources/images/GII_vs_labor_vs_parliament.png)
+
+The secondary vertical axis of the bubble chart represents the Gender Inequality Index (GII), a measure of gender-based disparities. Countries or regions located higher up the chart have higher GII values, indicating greater gender inequality. Conversely, those located lower on the bubble chart have lower GII values, signifying lower levels of gender inequality. With that, this chart shows that contries with a greater GII, have also increased rates of adolescent births (births per 1,000 women ages 15-19). In addition, a higher GII is associated with a higher maternal mortality ratio, which is the number of maternal deaths per 100,000 live birth. 
+
+![GII vs Maternal vs Adolescent](Resources/images/GII_vs_Maternal_vs_Adolescent.png)
 ---
 ### HDI vs IHDI Analysis
 
