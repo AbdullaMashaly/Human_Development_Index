@@ -267,6 +267,7 @@ function dashboard(countryName){
     let countryHDI2021 = allData.hdi_2021.filter(function(country) {return country.country === countryName});
     let countryHDITrend = allData.hdi.filter(function(country) {return country.country === countryName});
     let countryIHDItrend = allData.ihdi.filter(function(country) {return country.country === countryName});
+    let countryGII = allData.gii.filter(function(country) {return country.country === countryName});
 
     console.log(countryHDI2021);
     console.log(countryHDITrend);
@@ -279,6 +280,9 @@ function dashboard(countryName){
     
     //Fill the radar chart
     radar_chart(countryHDI2021[0]);
+
+    //Fill the gauge chart
+    updateGauge(countryGII[0]);
 };
 
 
@@ -428,7 +432,58 @@ function radar_chart(country, data = allDataRegions) {
     );
 };
 
+function updateGauge(country) {
+    console.log(country);
+    let gii = country['Gender Inequality Index'];
+    console.log(gii);
+    let data =[
+        {   
+            type: "indicator",
+            mode: "gauge+number",
+            value : gii,
+            gauge: {
+                axis:{
+                    range: [0, 1],
+                    tickmode: 'linear',
+                    tickfont: {
+                        size: 15
+                    }
+                },
+                bar: { color: 'brown'},
+                steps: [
+                    { range: [0, 0.1], color: 'rgb(173,216,230)' },  
+                    { range: [0.1, 0.2], color: 'rgb(100,149,237)' },  
+                    { range: [0.2, 0.3], color: 'rgb(0,191,255)' },  
+                    { range: [0.3, 0.4], color: 'rgb(30,144,255)' },  
+                    { range: [0.4, 0.5], color: 'rgb(0,128,128)' },  
+                    { range: [0.5, 0.6], color: 'rgb(32,178,170)' },  
+                    { range: [0.6, 0.7], color: 'rgb(0,206,209)' },  
+                    { range: [0.7, 0.8], color: 'rgb(70,130,180)' },  
+                    { range: [0.8, 0.9], color: 'rgb(95,158,160)' },  
+                    { range: [0.9, 1], color: 'rgb(25,25,112)' }
+                ]
+            }
+        }
+    ]
 
+    let layout = {
+        paper_bgcolor :'white',
+        annotations: [{
+            x: 0.5,
+            y: 1,
+            xref: 'paper',
+            yref: 'paper',
+            text: `<b>${country.country}</b><br><b>GII</b>`,
+            font: {
+                size: 12
+            },
+            showarrow: false,
+            align: 'center'
+        }]
+    };
+
+    Plotly.newPlot('gauge', data, layout);
+};
 
 //////////////////////////////////////////////
 
