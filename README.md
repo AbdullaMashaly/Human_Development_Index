@@ -51,7 +51,7 @@ When comparing the life expectancy in each of the different levels of developing
 
 ![Life Expectancy vs GNI](Resources/images/Life_Expectancy_vs_GNI.png)
 
-Is there any correlation between gender inequality index and other factors, including: maternal mortality ratio, adolescent birth rate, etc.
+Are there any correlations between gender inequality index and other factors, including: maternal mortality ratio, adolescent birth rate, etc.
 
 This grouped bar chart shows the comparison of male vs female labor force percentages and number of filled seats in parliament for both males and females in different regions of the world and then for the world overall. In addition, the secondary axis shows the GII for the different regions. It is clear that males fill the majority of the seats in parliament and make up the majority of the labor force throughout the world. It appears that Latin America and the Caribbean region have the highest number of women with seats in parliament. Also it is interesting to note that the Sub-Saharan Africa region has highest GII, but there are still a large percentage of women in the labor force, though the data does not specify what types of labor are most common. 
 
