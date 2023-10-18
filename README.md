@@ -1,4 +1,4 @@
-# project-3
+# Human Development Index
 UNC Chapel Hill - Data Analytics Boot Camp Project 3
 
 ## Team Members:
